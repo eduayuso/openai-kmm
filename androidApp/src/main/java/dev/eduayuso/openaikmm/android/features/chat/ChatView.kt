@@ -153,9 +153,9 @@ fun ChatViewPreview() {
 
     val initialState = ChatContract.State(
         messageList = listOf(
-            MessageEntity(text = "Hola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k aseHola k ase", fromOpenAi = true),
+            MessageEntity(text = "Hola k ase", fromOpenAi = true),
             MessageEntity(text = "Buenos días caballero", fromOpenAi = false),
-            MessageEntity(text = "Soy OpenAi, pregúntame lo que te salga de la poya", fromOpenAi = true)
+            MessageEntity(text = "Soy OpenAi, pregúntame lo que quieras", fromOpenAi = true)
         )
     )
 
