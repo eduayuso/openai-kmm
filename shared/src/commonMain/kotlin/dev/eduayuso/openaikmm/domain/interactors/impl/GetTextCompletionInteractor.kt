@@ -12,6 +12,7 @@ class GetTextCompletionInteractor(
 
     override val block: suspend (param: TextCompletionRequest) -> String
         get() = {
-            repository.textCompletion(it.text, it.model).joinToString (separator = "\n")
+            val result = repository.textCompletion(it.text, it.model)
+            result.joinToString(separator = "\n")
         }
 }

@@ -110,6 +110,7 @@ fun CardEndPadding(message: MessageEntity): Dp {
 fun TextColor(message: MessageEntity): Color {
 
     return when {
+        message.isError -> Color.Red
         message.fromOpenAi -> Color.Gray
         else -> Color.Black
     }

@@ -26,5 +26,5 @@ This is a example of using the OpenAI API in a Kotlin Multiplatform project.
 
 ### Screenshots
 
-![Alt Text](android.png)
-![Alt Text](ios.png)
+![Alt Text](screenshots/android.png)
+![Alt Text](screenshots/ios.png)

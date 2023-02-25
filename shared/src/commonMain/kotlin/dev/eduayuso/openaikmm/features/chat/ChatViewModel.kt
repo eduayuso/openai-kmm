@@ -94,8 +94,9 @@ open class ChatViewModel(
 
         addMessage(
             message = MessageEntity(
+                text = "Error fetching OpenAI API",
                 fromOpenAi = true,
-                isError = true
+                isError = value
             )
         )
     }

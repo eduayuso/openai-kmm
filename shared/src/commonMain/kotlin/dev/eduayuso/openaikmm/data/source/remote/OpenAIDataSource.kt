@@ -10,6 +10,8 @@ class OpenAIDataSource(
     private val apiClient: OpenAI,
 ) {
 
+    private val maxTokens = 100
+    
     suspend fun textCompletion(
         prompt: String,
         model: String
@@ -18,7 +20,8 @@ class OpenAIDataSource(
         val model = ModelId(model)
         val request = CompletionRequest(
             model = model,
-            prompt = prompt
+            prompt = prompt,
+            maxTokens = maxTokens
         )
         return apiClient.completion(request)
     }
